@@ -70,7 +70,7 @@
     .logo-halo {
       position: relative;
       display: inline-block;
-      margin-bottom: 42px;
+      margin-bottom: 20px;
       width: min(820px, 94vw);
     }
 
@@ -97,6 +97,16 @@
       margin: 4px auto 26px;
       background: linear-gradient(90deg, transparent, var(--gold), transparent);
       animation: grow 1.2s ease-out 0.5s forwards;
+    }
+
+    .company {
+      font-size: clamp(0.74rem, 2.5vw, 0.98rem);
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: var(--gold);
+      opacity: 0.92;
+      margin: 0 auto 0 0.3em; /* 0.3em offsets letter-spacing */
     }
 
     .tagline {
@@ -152,6 +162,7 @@
     <div class="logo-halo">
       <img class="logo" src="logo.svg" alt="Bombay Standard" />
     </div>
+    <p class="company">Abiomye Industries Private Limited</p>
     <div class="rule"></div>
     <p class="tagline">
       Coming Soon<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span>
@@ -159,7 +170,7 @@
   </main>
 
   <footer class="footer">
-    &copy; <span id="year">2026</span> Bombay Standard
+    &copy; <span id="year">2026</span> Abiomye Industries Private Limited
   </footer>
 
   <script>
